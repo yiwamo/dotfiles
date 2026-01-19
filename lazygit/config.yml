@@ -1,0 +1,9 @@
+gui:
+  showFileTree: false
+
+git:
+  parseEmoji: true
+
+update:
+  method: never
+
