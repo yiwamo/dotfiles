@@ -1,5 +1,5 @@
 gui:
-  showFileTree: false 
+  showFileTree: false
 
 git:
   parseEmoji: true
