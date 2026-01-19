@@ -1,11 +1,12 @@
 eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
 
-# alias
-alias ls="ls -la"
-alias ll="ls -la"
-alias la="ls -a"
+# ls => eza
 
+alias ls='eza -la --icons'
+alias ll='eza -la --icons'
+alias la='eza -a --icons'
+alias lt='eza -la --icons --tree --level=2'
 
 # custom command
 
