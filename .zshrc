@@ -23,9 +23,9 @@ ide(){
   tmux split-window -h -p 30   # 右に30%
   
   # 左下にlazygit
-  tmux send-keys -t 1 'lazygit' C-m
+  tmux send-keys -t {bottom-left} 'lazygit' C-m
   
   # メインペイン（左上）にフォーカス
-  tmux select-pane -t 0
+  tmux select-pane -t {top-left}
 }
 
