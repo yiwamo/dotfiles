@@ -29,3 +29,6 @@ ide(){
   tmux select-pane -t {top-left}
 }
 
+ide-kill(){
+  tmux kill-window
+}
