@@ -8,11 +8,15 @@ alias ll='eza -la --icons'
 alias la='eza -a --icons'
 alias lt='eza -la --icons --tree --level=2'
 
+# .. => cd ..
+
+alias ..='cd ..'
+
 # custom command
 
 ide(){
   # 上下分割（下25%）
-  tmux split-window -v -p 25
+  tmux split-window -v -p 30
   
   # 下のペインを3等分
   tmux split-window -h -p 66   # 左33%, 右66%
@@ -32,3 +36,8 @@ ide(){
 ide-kill(){
   tmux kill-window
 }
+
+z() {
+  cd "$(git rev-parse --show-toplevel 2>/dev/null)" || return
+}
+
