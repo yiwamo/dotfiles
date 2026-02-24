@@ -41,3 +41,15 @@ z() {
   cd "$(git rev-parse --show-toplevel 2>/dev/null)" || return
 }
 
+# KeyChainのUnlock(SSH)
+if [ -n "$SSH_CONNECTION" ]; then
+  keychain_status=$(security show-keychain-info ~/Library/Keychains/login.keychain-db 2>&1)
+  if echo "$keychain_status" | grep -q "User interaction is not allowed"; then
+    security unlock-keychain ~/Library/Keychains/login.keychain-db
+  fi
+fi
+
+export PATH="$HOME/.local/bin:$PATH"
+
+# OpenClaw Completion
+source "/Users/yiwamo-ms/.openclaw/completions/openclaw.zsh"

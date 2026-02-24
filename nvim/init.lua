@@ -21,3 +21,12 @@ vim.api.nvim_create_autocmd({ "FileChangedShellPost" }, {
     vim.notify("File changed on disk. Buffer reloaded.", vim.log.levels.WARN)
   end,
 })
+
+require("tokyonight").setup({
+  transparent = true,
+  styles = {
+    sidebars = "transparent",
+    floats = "transparent",
+  },
+})
+vim.cmd([[colorscheme tokyonight-night]])

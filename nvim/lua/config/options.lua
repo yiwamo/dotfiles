@@ -10,3 +10,7 @@ vim.opt.tabstop = 2 -- タブ幅を2スペースに設定
 vim.opt.shiftwidth = 2 -- インデント幅を2スペースに設定
 vim.opt.expandtab = true -- タブをスペースに変換
 vim.opt.wrap = false -- 行の折り返しを無効化
+
+vim.opt.termguicolors = true
+vim.opt.winblend = 0 -- window opacity
+vim.opt.pumblend = 0 -- popup opacity
