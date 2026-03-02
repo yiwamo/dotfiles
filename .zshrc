@@ -52,4 +52,6 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 # OpenClaw Completion
+autoload -Uz compinit
+compinit
 source "/Users/yiwamo-ms/.openclaw/completions/openclaw.zsh"
