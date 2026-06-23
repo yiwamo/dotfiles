@@ -8,6 +8,7 @@
       "Bash(npm exec:*)","Bash(npx:*)",
       "Bash(npm run test:*)","Bash(npm run lint)","Bash(npm run lint:*)","Bash(npm run format:*)",
       "Bash(npm ls)",
+      "Bash(pnpm lint:*)",
       "Bash(pkill:*)","Bash(curl:*)","Bash(true)",
       "Bash(git *)", "Bash(gh *)",
       "Bash(ls *)", "Bash(find *)", "Bash(grep *)", "Bash(cat *)",
