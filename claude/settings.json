@@ -1,37 +1,62 @@
 {
-  "autoUpdates": true,
-  "theme": "dark-daltonized",
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(npm run dev:*)","Bash(npm run build:*)","Bash(npm run tsc:*)",
-      "Bash(npm exec:*)","Bash(npx:*)",
-      "Bash(npm run test:*)","Bash(npm run lint)","Bash(npm run lint:*)","Bash(npm run format:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run tsc:*)",
+      "Bash(npm exec:*)",
+      "Bash(npx:*)",
+      "Bash(npm run test:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run format:*)",
       "Bash(npm ls)",
       "Bash(pnpm lint:*)",
-      "Bash(pkill:*)","Bash(curl:*)","Bash(true)",
-      "Bash(git *)", "Bash(gh *)",
-      "Bash(ls *)", "Bash(find *)", "Bash(grep *)", "Bash(cat *)",
-      "Bash(mkdir *)", "Bash(cp *)", "Bash(mv *)", "Bash(touch *)",
-      "Read", "Write", "Edit", "WebFetch", "WebSearch", "Skill"
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(true)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(cat *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Read",
+      "Write",
+      "Edit",
+      "WebFetch",
+      "WebSearch",
+      "Skill"
     ],
     "deny": [
-      "Read(**/.env)", "Read(~/.aws/credentials)", "Read(~/.ssh/*)",
-      "Read(**/master.key)", "Read(**/*.pem)",
-      "Edit(**/.env)", "Edit(~/.aws/credentials)", "Edit(~/.ssh/*)"
+      "Read(**/.env)",
+      "Read(~/.aws/credentials)",
+      "Read(~/.ssh/*)",
+      "Read(**/master.key)",
+      "Read(**/*.pem)",
+      "Edit(**/.env)",
+      "Edit(~/.aws/credentials)",
+      "Edit(~/.ssh/*)"
     ],
     "ask": [
-      "Bash(git reset --hard *)", "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Bash(git push --force *)",
       "Bash(git branch -D *)",
-      "Bash(curl -X *)", "Bash(curl -d *)",
-      "Bash(sudo *)", "Bash(rm *)", "Bash(rm -rf *)",
-      "Bash(terraform apply *)", "Bash(terraform destroy *)"
+      "Bash(curl -X *)",
+      "Bash(curl -d *)",
+      "Bash(sudo *)",
+      "Bash(rm *)",
+      "Bash(rm -rf *)",
+      "Bash(terraform apply *)",
+      "Bash(terraform destroy *)"
     ]
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash /Users/yiwamo/.claude/statusline-command.sh"
-  },
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "Notification": [
       {
@@ -43,9 +68,9 @@
         ]
       }
     ],
-    "Stop":[
+    "Stop": [
       {
-        "hooks":[
+        "hooks": [
           {
             "type": "command",
             "command": "afplay /System/Library/Sounds/Funk.aiff"
@@ -53,6 +78,13 @@
         ]
       }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/yiwamo/.claude/statusline-command.sh"
+  },
+  "tui": "fullscreen",
+  "theme": "dark-daltonized",
+  "autoUpdates": true,
+  "switchModelsOnFlag": false
 }
-
