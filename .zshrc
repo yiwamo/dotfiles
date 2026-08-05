@@ -87,3 +87,4 @@ function y() {
 # Zoxide(z)
 # ===========================================================================
 eval "$(zoxide init zsh)"
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
