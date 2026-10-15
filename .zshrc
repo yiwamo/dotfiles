@@ -88,3 +88,6 @@ function y() {
 # ===========================================================================
 eval "$(zoxide init zsh)"
 export PATH=/opt/homebrew/share/google-cloud-sdk/bin:"$PATH"
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/yiwamo/.local/bin:$PATH"
